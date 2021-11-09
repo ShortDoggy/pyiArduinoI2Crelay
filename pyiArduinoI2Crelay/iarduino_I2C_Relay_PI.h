@@ -124,7 +124,7 @@ class iarduino_I2C: public iarduino_I2C_BASE{                                   
                         this->filename = (char*)"/dev/i2c-" + bus;
                 }
         private:
-                char *filename = (char*)"/dev/i2c-1";
+                char *filename = (char*)"/dev/i2c-0"; // Orange PI One fix
                 int file_i2c;
 };
 #endif
